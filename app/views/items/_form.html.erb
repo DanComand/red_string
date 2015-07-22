@@ -1,4 +1,4 @@
-<%= form_for(@item) do |f| %>
+<%= form_for Item.new do |f| %>
 
   <div class="field">
     <%= f.label :name %><br />
@@ -6,19 +6,23 @@
   </div>
   <div class="field">
     <%= f.label :lent_to %><br />
-    <%= f.text_area :lent_to %>
+    <%= f.text_field :lent_to %>
   </div>
   <div class="field">
     <%= f.label :date_lent %><br />
-    <%= f.text_area :date_lent %>
+    <%= f.date_field :date_lent %>
+  </div>
+  <div class="field">
+    <%= f.label :date_due %><br />
+    <%= f.date_field :date_due %>
   </div>
   <div class="field">
     <%= f.label :phone %><br />
-    <%= f.text_area :phone %>
+    <%= f.text_field :phone %>
   </div>
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.text_area :email %>
+    <%= f.text_field :email %>
   </div>
 
   <div class="actions">
