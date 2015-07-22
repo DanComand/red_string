@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  lent_to: MyString
+  date_lent: 2015-07-21 23:23:54
+  date_due: 2015-07-21 23:23:54
+  phone: MyString
+  email: MyString
+
+two:
+  name: MyString
+  lent_to: MyString
+  date_lent: 2015-07-21 23:23:54
+  date_due: 2015-07-21 23:23:54
+  phone: MyString
+  email: MyString
