@@ -1,4 +1,5 @@
 class ItemsController < ApplicationController
+  before_filter :ensure_logged_in, only: [:create, :destroy]
 
   def index
     @items = Item.all
