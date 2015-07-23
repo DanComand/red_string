@@ -45,6 +45,6 @@ class ItemsController < ApplicationController
 
   private
   def item_params
-    params.require(:item).permit(:name, :lent_to, :date_lent, :date_due, :phone, :email)
+    params.require(:item).permit(:image, :name, :lent_to, :date_lent, :date_due, :phone, :email)
   end
 end

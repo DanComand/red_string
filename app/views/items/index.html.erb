@@ -4,5 +4,6 @@
 <p><%= item.lent_to %> <%= item.phone %> <%= item.email %></p>
 <p><%= item.date_lent %></p>
 <p><%= item.date_due %></p>
+<p><%= image_tag item.image.url(:large) %>
 
 <% end %>
