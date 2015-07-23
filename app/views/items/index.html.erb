@@ -1,9 +1,11 @@
-<h1>Everything you've lent out</h1>
+<h1>Your Red Strings</h1>
 <% @items.each do |item| %>
+<div class="container">
 <p><%= item.name %></p>
-<p><%= item.lent_to %> <%= item.phone %> <%= item.email %></p>
-<p><%= item.date_lent %></p>
-<p><%= item.date_due %></p>
+<p>Lent to <%= item.lent_to %></p><p><%= item.phone %></p><p><%= item.email %></p>
+<p>Lent on: <%= item.date_lent.strftime("%B %d %Y") %></p>
+<p>Due Back: <%= item.date_due.strftime("%B %d %Y") %></p>
 <p><%= image_tag item.image.url(:large) %>
 
 <% end %>
+</p>
